@@ -1,5 +1,5 @@
 {
-  "name": "npm-package",
+  "name": "@yogeshicube/npm-package",
   "packageManager": "yarn@3.6.1",
   "version": "0.0.1",
   "description": "creating npm package and uploading to npm using yarn",
