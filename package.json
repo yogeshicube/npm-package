@@ -1,0 +1,34 @@
+{
+  "name": "npm-package",
+  "packageManager": "yarn@3.6.1",
+  "version": "0.0.1",
+  "description": "creating npm package and uploading to npm using yarn",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "lib/index.mjs",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:yogeshicube/npm-package.git"
+  },
+  "keywords": [
+    "test",
+    "creating first package"
+  ],
+  "author": "Yogesh Dangi",
+  "license": "MIT",
+  "bugs": {},
+  "homepage": "https://github.com/yogeshicube/npm-package.git",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "@yogeshicube:registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
