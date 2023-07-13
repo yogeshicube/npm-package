@@ -18,7 +18,5 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
       - run: yarn install
       - run: yarn run build
-      - name: Set deployment token
-        run: yarn config set '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
+      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - run: yarn publish --access public
-        
