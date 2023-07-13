@@ -16,7 +16,7 @@ jobs:
           node-version: '18.x'
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
-      - run: npm CI
+      - run: npm ci
       - run: npm run build
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN_AUTH }}" > ~/.npmrc
       - run: npm publish --access public
