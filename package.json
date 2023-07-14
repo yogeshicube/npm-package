@@ -1,6 +1,5 @@
 {
   "name": "@yogeshicube/npm-package",
-  "packageManager": "yarn@3.6.1",
   "version": "0.0.1",
   "description": "creating npm package and uploading to npm using yarn",
   "main": "lib/index.js",
@@ -8,7 +7,7 @@
   "module": "lib/index.mjs",
   "scripts": {
     "build": "tsc",
-    "prepare": "yarn run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
